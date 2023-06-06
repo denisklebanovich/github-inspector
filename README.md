@@ -35,18 +35,6 @@ management.
 git clone https://github.com/denisklebanovich/github-inspector.git
 ```
 
-You can also set up github token in `application.properties` file to increase the rate limit of Github API.
-You can either set it as an environment variable and then use it in the file:
-```properties
-github.api.token=${GITHUB_API_TOKEN}
-```
-or set it directly in the file:
-```properties
-github.api.token=your_token
-```
-To generate a token, follow the
-instructions [here](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token).
-
 ## Usage
 
 The main endpoint of this application is `/github/users/{username}/repos`.
